@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class TinkerTailor {
 
@@ -14,7 +17,7 @@ public class TinkerTailor {
 
         int indexer = 0;
 
-        while(!(eliminatedPeople.size()==amountPeople)) {
+        while (!(eliminatedPeople.size() == amountPeople)) {
             for (int s = 0; s < syllables; s++) {
                 if (indexer >= circle.size()) {
                     indexer = 0;
@@ -35,17 +38,18 @@ public class TinkerTailor {
 
         }
 
-         for (int s : eliminatedPeople) {
-                System.out.println(s);
-            }
+        for (int s : eliminatedPeople) {
+            System.out.println(s);
+        }
 
         return eliminatedPeople;
     }
 
 
     private List<Integer> populateCircle(int amountPeople) {
-        for(int p = 1; p<= amountPeople; p++){
+        for (int p = 1; p <= amountPeople; p++) {
             circle.add(p);
-        } return circle;
+        }
+        return circle;
     }
 }
