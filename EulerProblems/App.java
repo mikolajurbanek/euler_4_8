@@ -8,14 +8,15 @@ public class App {
         BinarySearch bs = new BinarySearch();
         FlatteningMultidimensionalList fml = new FlatteningMultidimensionalList();
         MineSweeperBasics msb = new MineSweeperBasics();
-        msb.executeMiner();
+        TinkerTailor tt = new TinkerTailor();
+
 
 
 
 //        System.out.println(bs.lookForNumber(new int[]{2, 1, 4, 7, 9, 3}, 5));
 //        System.out.println(fourth.palindromesByMultiplicity());
 //        System.out.println(eight.findBiggestProduct());
-
-
+//        msb.executeMiner();
+//        tt.getQueueFromSong(5,3);
     }
 }
